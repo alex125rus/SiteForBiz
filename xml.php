@@ -11,9 +11,9 @@
         <ul>
             <button onclick="index.php">Главня</button>
             <button onclick="xml.php">XML</button>
-            <button>Сервисы</button>
-            <button>RSS</button>
-            <button>Приложение</button>
+            <button onclick="services.php">Сервисы</button>
+            <button onclick="rss.php">RSS</button>
+            <button onclick="application.php">Приложение</button>
         </ul>
         <br>
         <label>Вы находитесь на главной странице.</label>
