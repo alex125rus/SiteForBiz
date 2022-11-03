@@ -4,7 +4,25 @@
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
+    <header>
+        <h1>Сервис по выбору детективов</h1>
+    </header>
     <div>
-        <span>Все ок</span>
+        <ul>
+            <button>Главня</button>
+            <button>XML</button>
+            <button>Сервисы</button>
+            <button>RSS</button>
+            <button>Приложение</button>
+        </ul>
+        <br>
+        <label>Вы находитесь на главной странице.</label>
+        <br>
+        <label>Данный сайт реализован в рамках лабораторного практикума</label>
+        <br>
+        <label>По предмету "Web технологии".</label>
+        <br>
+        <label>Для взаимодествия с БД "Радиодетали" нажмите на кнопку "Приложение".</label>
+        <br>
     </div>
 </body>
