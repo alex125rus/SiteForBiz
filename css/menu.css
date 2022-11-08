@@ -13,3 +13,63 @@ body {
     border-radius: 3px; /* Скругляем уголки */
     display:inline-block;
    }
+.topmenu > li {
+    position: relative;
+    text-align:center;
+    border-left: 1px solid black;
+      margin:inherit;
+      margin-right: 5px;
+      padding: 3px;
+      background-color:black;
+      border-radius:28px;
+      border:1px solid black;
+      display:inline-block;
+      cursor:pointer;
+      padding:10px 20px;
+      text-decoration:none;
+      color:#ffffff;
+  }
+.topmenu > li:hover {
+  
+    position: relative;
+    border-left: 1px solid black;
+      margin:inherit;
+      margin-right: 5px; 
+      padding: 3px;
+      background-color:#1a263b;
+      border-radius:14px;
+      border:1px solid #1a263b;
+      display:inline-block;
+      cursor:pointer;
+      padding:10px 20px;
+      text-decoration:none;
+      color:#ffffff;
+  }
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+      color:#ffffff;
+      text-decoration: none; 
+  }
+.topmenu > li > a.active
+{
+    margin-left: 5px;
+    color: inherit;
+  }
+.topmenu ul{
+    text-align:center;
+    margin:auto;
+}
+.top ul:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  .topmenu ul{
+          text-align:center;
+          margin:auto;
+  }
+  .top a {
+    text-decoration: none;
+    display: block;
+  }

@@ -9,8 +9,8 @@
     <header>
         <h1>Сервис по выбору детективов</h1>
     </header>
-    <div>
-        <ul>
+    <div class="top">
+        <ul class="topmenu">
             <li>
                 <a href="index.php" class="btn">Главная</a>
             </li>
