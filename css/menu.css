@@ -6,8 +6,8 @@ body {
 }
 .btn {
     display: inline-block; /* Строчно-блочный элемент */
-    background: #8C959D; /* Серый цвет фона */
-    color: #fff; /* Белый цвет текста */
+    background: white; /* Серый цвет фона */
+    color: black; /* Белый цвет текста */
     padding: 1rem 1.5rem; /* Поля вокруг текста */
     text-decoration: none; /* Убираем подчёркивание */
     border-radius: 3px; /* Скругляем уголки */
@@ -18,15 +18,15 @@ body {
     border-left: 1px solid black;
       margin:inherit;
       margin-right: 5px;
-      padding: 3px;
-      background-color:black;
+      padding: 1px;
+      background-color:white;
       border-radius:28px;
       border:1px solid black;
       display:inline-block;
       cursor:pointer;
       padding:10px 20px;
       text-decoration:none;
-      color:#ffffff;
+      color:black;
   }
 .topmenu > li:hover {
   
@@ -34,19 +34,19 @@ body {
     border-left: 1px solid black;
       margin:inherit;
       margin-right: 5px; 
-      padding: 3px;
-      background-color:#1a263b;
+      padding: 1px;
+      background-color:white;
       border-radius:14px;
       border:1px solid #1a263b;
       display:inline-block;
       cursor:pointer;
       padding:10px 20px;
       text-decoration:none;
-      color:#ffffff;
+      color:black;
   }
 .topmenu > li:first-child {border-left: 0;}
 .topmenu > li > a {  
-      color:#ffffff;
+      color:black;
       text-decoration: none; 
   }
 .topmenu > li > a.active
