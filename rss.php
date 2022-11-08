@@ -9,9 +9,9 @@
     <header>
         <h1>Сервис по выбору детективов</h1>
     </header>
-    <div>
+    <div class="inlineClass">
         <ul>
-            <form action="index.php">
+            <form action="index.php" >
                 <button onclick="index.php">Главня</button></form>
             <form action="xml.php">
                 <button onclick="xml.php">XML</button>

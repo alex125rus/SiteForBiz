@@ -1,3 +1,6 @@
 body {
     color: purple; 
 }
+.inlineClas{
+    display: inline;
+}
