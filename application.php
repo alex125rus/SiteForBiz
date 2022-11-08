@@ -11,11 +11,20 @@
     </header>
     <div>
         <ul>
-            <button onclick="index.php">Главня</button>
-            <button onclick="xml.php">XML</button>
-            <button onclick="services.php">Сервисы</button>
-            <button onclick="rss.php">RSS</button>
-            <button onclick="application.php">Приложение</button>
+            <form action="index.php">
+                <button onclick="index.php">Главня</button></form>
+            <form action="xml.php">
+                <button onclick="xml.php">XML</button>
+            </form>
+            <form action="services.php">
+                <button onclick="services.php">Сервисы</button>
+            </form>
+            <form action="rss.php">
+                <button onclick="rss.php">RSS</button>
+            </form>
+            <form action="application.php">
+                <button onclick="application.php">Приложение</button>
+            </form>
         </ul>
         <br>
         <label>Вы находитесь на главной странице.</label>
@@ -25,6 +34,9 @@
         <label>По предмету "Web технологии".</label>
         <br>
         <label>Для взаимодествия с БД "Радиодетали" нажмите на кнопку "Приложение".</label>
+        <br>
+        <br>
+        <h1>Приложение</h1>
         <br>
     </div>
 </body>
