@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Главня</title>
     <link rel="stylesheet" href="css/menu.css">
 </head>
