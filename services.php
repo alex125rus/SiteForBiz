@@ -112,20 +112,6 @@
             </style>
         </div>
         <script src="js/calendar.js"></script>
-        <br>
-        <div class="center">
-            <label>Вы находитесь на главной странице.</label>
-            <br>
-            <label>Данный сайт реализован в рамках лабораторного практикума</label>
-            <br>
-            <label>По предмету "Web технологии".</label>
-            <br>
-            <label>Для взаимодествия с БД "Радиодетали" нажмите на кнопку "Приложение".</label>
-            <br>
-            <br>
-            <h1>Сервисы</h1>
-            <br>
-        </div>
     </div>
     <br>
     <div class="center">
