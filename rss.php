@@ -10,31 +10,23 @@
         <h1>Сервис по выбору детективов</h1>
     </header>
     <div>
-        <div class="inlineClass">
-            <form action="index.php">
-                <button onclick="index.php">Главня</button>
-            </form>
-        </div>
-        <div class="inlineClass">
-            <form action="xml.php">
-                <button onclick="xml.php">XML</button>
-            </form>
-        </div>
-        <div class="inlineClass">
-            <form action="services.php">
-                <button onclick="services.php">Сервисы</button>
-            </form>
-        </div>
-        <div class="inlineClass">
-            <form action="rss.php">
-                <button onclick="rss.php">RSS</button>
-            </form>
-        </div>
-        <div class="inlineClass">
-            <form action="application.php">
-                <button onclick="application.php">Приложение</button>
-            </form>
-        </div>
+        <ul>
+            <li>
+                <a href="index.php" class="btn">Главная</a>
+            </li>
+            <li>
+                <a href="xml.php" class="btn">XML</a>
+            </li>
+            <li>
+                <a href="services.php" class="btn">Сервисы</a>
+            </li>
+            <li>
+                <a href="rss.php" class="btn">RSS</a>
+            </li>
+            <li>
+                <a href="application.php" class="btn">Приложение</a>
+            </li>
+        </ul>
         <br>
         <label>Вы находитесь на главной странице.</label>
         <br>
