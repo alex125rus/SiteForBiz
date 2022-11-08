@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Главня</title>
     <link rel="stylesheet" href="css/menu.css">
 </head>
+
 <body>
     <header>
-        <h1>Сервис по выбору детективов</h1>
+        <h1 class="center">Сервис по выбору детективов</h1>
     </header>
-    <div class="top">
-        <ul class="topmenu">
+    <div class="top" class="center">
+        <ul class="topmenu center">
             <li>
                 <a href="index.php">Главная</a>
             </li>
@@ -28,19 +30,18 @@
             </li>
         </ul>
         <br>
+        <div class="center">
         <label>Вы находитесь на главной странице.</label>
         <br>
         <label>Данный сайт реализован в рамках лабораторного практикума</label>
         <br>
-        <label>По предмету "Web технологии".</label>
+        <label>По предмету "Web программирование".</label>
         <br>
-        <label>Для взаимодествия с БД "Радиодетали" нажмите на кнопку "Приложение".</label>
-        <br>
-        <br>
-        <h1>RSS</h1>
+        <label>Для взаимодествия с БД "Детективы" нажмите на кнопку "Приложение".</label>
+        </div>
         <br>
     </div>
-    <div>
+    <div class="center">
                 <!-- Yandex.Metrika informer -->
         <a href="https://metrika.yandex.ru/stat/?id=91098061&amp;from=informer"
         target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/91098061/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
