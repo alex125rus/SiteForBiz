@@ -12,19 +12,19 @@
     <div class="top">
         <ul class="topmenu">
             <li>
-                <a href="index.php" class="btn">Главная</a>
+                <a href="index.php">Главная</a>
             </li>
             <li>
-                <a href="xml.php" class="btn">XML</a>
+                <a href="xml.php">XML</a>
             </li>
             <li>
-                <a href="services.php" class="btn">Сервисы</a>
+                <a href="services.php">Сервисы</a>
             </li>
             <li>
-                <a href="rss.php" class="btn">RSS</a>
+                <a href="rss.php">RSS</a>
             </li>
             <li>
-                <a href="application.php" class="btn">Приложение</a>
+                <a href="application.php">Приложение</a>
             </li>
         </ul>
         <br>
