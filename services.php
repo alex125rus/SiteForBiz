@@ -62,6 +62,55 @@
                 </table>
             </div>
         </div>
+        <br>
+        <div class="center">
+            <div id="225ec3fb3a180a30586fbec3a2aad904" class="ww-informers-box-854753" style="margin-left:42%">
+                <p class="ww-informers-box-854754"><a href="https://world-weather.ru/pogoda/russia/moscow/">Погода
+                        world-weather.ru</a><br><a href="https://world-weather.ru/">world-weather.ru</a></p>
+            </div>
+            <script async type="text/javascript" charset="utf-8"
+                src="https://world-weather.ru/wwinformer.php?userid=225ec3fb3a180a30586fbec3a2aad904"></script>
+            <style>
+            .ww-informers-box-854754 {
+                -webkit-animation-name: ww-informers54;
+                animation-name: ww-informers54;
+                -webkit-animation-duration: 1.5s;
+                animation-duration: 1.5s;
+                white-space: nowrap;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                font-family: Arial;
+                line-height: 18px;
+                text-align: center
+            }
+
+            @-webkit-keyframes ww-informers54 {
+
+                0%,
+                80% {
+                    opacity: 0
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+
+            @keyframes ww-informers54 {
+
+                0%,
+                80% {
+                    opacity: 0
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+            </style>
+        </div>
         <script src="js/calendar.js"></script>
         <br>
         <div class="center">
@@ -78,6 +127,7 @@
             <br>
         </div>
     </div>
+    <br>
     <div class="center">
         <!-- Yandex.Metrika informer -->
         <a href="https://metrika.yandex.ru/stat/?id=91098061&amp;from=informer" target="_blank" rel="nofollow"><img
