@@ -9,7 +9,7 @@
     </header>
     <div>
         <ul>
-            <button onclick="index.html">Главня</button>
+            <button onclick="index.php">Главня</button>
             <button onclick="xml.php">XML</button>
             <button onclick="services.php">Сервисы</button>
             <button onclick="rss.php">RSS</button>
