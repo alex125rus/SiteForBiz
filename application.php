@@ -29,8 +29,15 @@
                 <a href="application.php">Приложение</a>
             </li>
         </ul>
-        <div>
-            <?php
+        <div class="center">
+            <table border="1" style="display: inline-block;">
+                <tr><th>Название</th>
+                <th>Автор</th>
+                <th>Год издания</th>
+                <th>Количество страниц</th>
+                <th>Страна</th>
+                <th>Герои</th></tr>
+                <?php
             $host = 'localhost';
             $data = 'f96414jz_deteciv';
             $user = 'f96414jz_deteciv';
@@ -41,7 +48,29 @@
             $query = 'SELECT * FROM title';
             $result = $connection->query($query);
             if(!$result)die('Error result');
+            $rows = $result->num_rows;
+            for($i =0;$i<$rows;++$i)
+            {
+                $result->data_seek($i);
+                echo '<tr>';
+                echo '<td>' .$result->fetch_assoc()['Name'].'</td>';
+                $result->data_seek($i);
+                echo '<td>' .$result->fetch_assoc()['Author'].'</td>';
+                $result->data_seek($i);
+                echo '<td>' .$result->fetch_assoc()['Date'].'</td>';
+                $result->data_seek($i);
+                echo '<td>' .$result->fetch_assoc()['Count'].'</td>';
+                $result->data_seek($i);
+                echo '<td>' .$result->fetch_assoc()['Country'].'</td>';
+                $result->data_seek($i);
+                echo '<td>' .$result->fetch_assoc()['Hero'].'</td>';
+                echo '</tr>';
+            }
+            /*echo '<pre>';
+            print_r($result);
+            echo '</pre>';*/
             ?>
+            </table>
         </div>
         <br>
         <div class="center">
