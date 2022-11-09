@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <polygon cx="143.5" cy="424.5" fill="none" id="svg_4" orient="point" point="5" r="0" r2="0" shape="star" strokeWidth="5" strokecolor="#000000"/>
+  <line fill="none" id="svg_10" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="503.5" x2="502.5" y1="255.5" y2="256.5"/>
+  <line fill="none" id="svg_19" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="33.5" x2="32.5" y1="445.5" y2="445.5"/>
+  <path d="m30.5,19.5l-0.5,431.5l170,-52l1,-300l-170.5,-79.5z" fill="none" id="svg_20" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+  <line fill="none" id="svg_22" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="241.5" x2="241.5" y1="19.5" y2="452.5"/>
+  <line fill="none" id="svg_23" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="240.5" x2="401.81026" y1="19.5" y2="19.5"/>
+  <line fill="none" id="svg_24" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="242.5" x2="400.512658" y1="450.5" y2="450.5"/>
+  <line fill="none" id="svg_25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="242.5" x2="400.528478" y1="230.5" y2="230.5"/>
+  <line fill="none" id="svg_26" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="420.5" x2="619.5" y1="19.5" y2="20.5"/>
+  <line fill="none" id="svg_27" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="510.5" x2="510.5" y1="19.5" y2="452.961648"/>
+  <line fill="none" id="svg_28" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="906.5" x2="904.5" y1="218.5" y2="218.5"/>
+ </g>
+</svg>

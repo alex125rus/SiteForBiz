@@ -25,8 +25,13 @@
             <li>
                 <a href="rss.php">RSS</a>
             </li>
-            <li>
-                <a href="application.php">Приложение</a>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Приложение</a>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
             </li>
         </ul>
         <div class="center clockdiv">

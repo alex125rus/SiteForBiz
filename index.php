@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Главня</title>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="icon" href="http://f96414jz.beget.tech/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -25,12 +26,19 @@
             <li>
                 <a href="rss.php">RSS</a>
             </li>
-            <li>
-                <a href="application.php">Приложение</a>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Приложение</a>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
             </li>
         </ul>
         <br>
         <div class="center">
+        <label>Добро пожаловать!</label>
+        <br>
         <label>Вы находитесь на главной странице.</label>
         <br>
         <label>Данный сайт реализован в рамках лабораторного практикума</label>
@@ -41,6 +49,8 @@
         </div>
         <br>
     </div>
+    <br><br><br><br><br><br><br>
+    <div class="center">Copyright © 2022 Дуванова Анастасия</div>
     <div class="center">
                 <!-- Yandex.Metrika informer -->
         <a href="https://metrika.yandex.ru/stat/?id=91098061&amp;from=informer"
