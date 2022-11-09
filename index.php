@@ -49,7 +49,13 @@
         </div>
         <br>
     </div>
-    <br><br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="center">Copyright © 2022 Дуванова Анастасия</div>
     <div class="center">
         <!-- Yandex.Metrika informer -->
