@@ -49,22 +49,31 @@
             $result = $connection->query($query);
             if(!$result)die('Error result');
             $rows = $result->num_rows;
+            $cat = mysqli_fetch_all($result,MYSQLI_ASSOC);
             for($i =0;$i<$rows;++$i)
             {
-                $result->data_seek($i);
+                echo '<tr>';
+                echo '<td>' .$cat[0]['Name'].'</td>';
+                echo '<td>' .$cat[0]['Author'].'</td>';
+                echo '<td>' .$cat[0]['Date'].'</td>';
+                echo '<td>' .$cat[0]['Count'].'</td>';
+                echo '<td>' .$cat[0]['Country'].'</td>';
+                echo '<td>' .$cat[0]['Hero'].'</td>';
+                echo '</tr>';
+                /*//$result->data_seek($i);
                 echo '<tr>';
                 echo '<td>' .$result->fetch_assoc()['Name'].'</td>';
-                $result->data_seek($i);
+                //$result->data_seek($i);
                 echo '<td>' .$result->fetch_assoc()['Author'].'</td>';
-                $result->data_seek($i);
+                //$result->data_seek($i);
                 echo '<td>' .$result->fetch_assoc()['Date'].'</td>';
-                $result->data_seek($i);
+                //$result->data_seek($i);
                 echo '<td>' .$result->fetch_assoc()['Count'].'</td>';
-                $result->data_seek($i);
+                //$result->data_seek($i);
                 echo '<td>' .$result->fetch_assoc()['Country'].'</td>';
-                $result->data_seek($i);
+                //$result->data_seek($i);
                 echo '<td>' .$result->fetch_assoc()['Hero'].'</td>';
-                echo '</tr>';
+                echo '</tr>';*/
             }
             /*echo '<pre>';
             print_r($result);
