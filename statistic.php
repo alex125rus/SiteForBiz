@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Главня</title>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="icon" href="http://f96414jz.beget.tech/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -37,91 +38,56 @@
                 </div>
             </li>
         </ul>
-        <div class="center clockdiv">
-            <a href="https://time.is/Obninsk" id="time_is_link" rel="nofollow"
-                style="font-size:64px;color:white;background:black"></a>
-            <span id="Obninsk_z71d" style="font-size:64px;color:white;background:black"></span>
-            <script src="//widget.time.is/t.js"></script>
-            <script>
-            time_is_widget.init({
-                Obninsk_z71d: {}
-            });
-            </script>
+        <div class="center">
+            <table border="1" style="display: inline-block;">
+                <tr>
+                    <th>Автор</th>
+                    <th>Количество книг на сайте</th>
+                </tr>
+                <?php
+            $host = 'localhost';
+            $data = 'f96414jz_deteciv';
+            $user = 'f96414jz_deteciv';
+            $pass = 'R5hXcP0n';
+            $connection = new mysqli($host,$user,$pass,$data);
+            if($connection->connect_error)die($connection->connect_error);
+            $query = 'SELECT MAX(Author) as name, Count(Author) as count FROM title';
+            $result = $connection->query($query);
+            if(!$result)die('Error result');
+            $rows = $result->num_rows;
+            $cat = mysqli_fetch_all($result,MYSQLI_ASSOC);
+            for($i =0;$i<$rows;++$i)
+            {
+                echo '<tr>';
+                echo '<td>' .$cat[0]['name'].'</td>';
+                echo '<td>' .$cat[0]['count'].'</td>';
+                echo '</tr>';
+            }
+            echo '</table>';
+            ?>
         </div>
         <br>
-        <div class="center">
-            <div class="look-calendar" style="color: black;">
-                <table id="calendar">
-                    <thead>
-                        <tr>
-                            <td><b>‹</b>
-                            <td colspan="5">
-                            <td><b>›</b>
-                        <tr class="dn">
-                            <td>Пн
-                            <td>Вт
-                            <td>Ср
-                            <td>Чт
-                            <td>Пт
-                            <td>Сб
-                            <td>Вс
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
-        </div>
         <br>
-        <div class="center">
-            <div id="225ec3fb3a180a30586fbec3a2aad904" class="ww-informers-box-854753" style="margin-left:42%">
-                <p class="ww-informers-box-854754"><a href="https://world-weather.ru/pogoda/russia/moscow/">Погода
-                        world-weather.ru</a><br><a href="https://world-weather.ru/">world-weather.ru</a></p>
-            </div>
-            <script async type="text/javascript" charset="utf-8"
-                src="https://world-weather.ru/wwinformer.php?userid=225ec3fb3a180a30586fbec3a2aad904"></script>
-            <style>
-            .ww-informers-box-854754 {
-                -webkit-animation-name: ww-informers54;
-                animation-name: ww-informers54;
-                -webkit-animation-duration: 1.5s;
-                animation-duration: 1.5s;
-                white-space: nowrap;
-                overflow: hidden;
-                -o-text-overflow: ellipsis;
-                text-overflow: ellipsis;
-                font-size: 12px;
-                font-family: Arial;
-                line-height: 18px;
-                text-align: center
-            }
-
-            @-webkit-keyframes ww-informers54 {
-
-                0%,
-                80% {
-                    opacity: 0
-                }
-
-                100% {
-                    opacity: 1
-                }
-            }
-
-            @keyframes ww-informers54 {
-
-                0%,
-                80% {
-                    opacity: 0
-                }
-
-                100% {
-                    opacity: 1
-                }
-            }
-            </style>
-        </div>
-        <script src="js/calendar.js"></script>
-    </div>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="center">Copyright © 2022 Дуванова Анастасия</div>
+        <div class="center">
+            <label>Добро пожаловать!</label>
+            <br>
+            <label>Вы находитесь на главной странице.</label>
+            <br>
+            <label>Данный сайт реализован в рамках лабораторного практикума</label>
+            <br>
+            <label>По предмету "Web программирование".</label>
+            <br>
+            <label>Для взаимодествия с БД "Детективы" нажмите на кнопку "Приложение".</label>
+        </div>
+        <br>
+    </div>
     <br>
     <br>
     <br>

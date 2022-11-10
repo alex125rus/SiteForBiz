@@ -18,6 +18,9 @@
                 <a href="index.php">Главная</a>
             </li>
             <li>
+                <a href="contacts.php">Контакты</a>
+            </li>
+            <li>
                 <a href="xml.php">XML</a>
             </li>
             <li>
@@ -29,9 +32,9 @@
             <li class="dropdown">
                 <a href="#" class="dropbtn">Приложение</a>
                 <div class="dropdown-content">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
+                    <a href="#">Поиск</a>
+                    <a href="#">Редактировать записи</a>
+                    <a href="statistic.php">Статистика</a>
                 </div>
             </li>
         </ul>

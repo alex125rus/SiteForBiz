@@ -17,6 +17,9 @@
                 <a href="index.php">Главная</a>
             </li>
             <li>
+                <a href="contacts.php">Контакты</a>
+            </li>
+            <li>
                 <a href="xml.php">XML</a>
             </li>
             <li>
@@ -28,9 +31,9 @@
             <li class="dropdown">
                 <a href="#" class="dropbtn">Приложение</a>
                 <div class="dropdown-content">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
+                    <a href="#">Поиск</a>
+                    <a href="#">Редактировать записи</a>
+                    <a href="statistic.php">Статистика</a>
                 </div>
             </li>
         </ul>
@@ -46,6 +49,14 @@
         </div>
         <br>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="center">Copyright © 2022 Дуванова Анастасия</div>
     <div class="center">
                 <!-- Yandex.Metrika informer -->
         <a href="https://metrika.yandex.ru/stat/?id=91098061&amp;from=informer"
