@@ -17,6 +17,9 @@
                 <a href="index.php">Главная</a>
             </li>
             <li>
+                <a href="contacts.php">Контакты</a>
+            </li>
+            <li>
                 <a href="xml.php">XML</a>
             </li>
             <li>
