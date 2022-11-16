@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Главня</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="css/menu.css">
 </head>
 
