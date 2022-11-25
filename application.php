@@ -75,7 +75,7 @@
                 <a href="services.php">Сервисы</a>
             </li>
             <li>
-                <a href="rss.php">RSS</a>
+                <a href="authorization.php">RSS</a>
             </li>
         </ul>
         <div class="center">
