@@ -8,8 +8,8 @@ function redirect_to($message, $address_page,$site = "http://f96414jz.beget.tech
 {
     $_SESSION["server_messages"] = $message;
     header("HTTP/1.1 301 Moved Permanently");
-        header("Location: ". $site."/".$address_page);
-        exit();
+    header("Location: ". $site."/".$address_page);
+    exit();
 }
 function saveCookisForPage($name,$page = "registration_php")
 {
@@ -32,7 +32,28 @@ if(isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"])
                     $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Вы ввели неправильную капчу </p>";
                     redirect_to($error_message,"registration.php");
                     }else{
-                        //написание добавление строки в бд
+                        $query_select_user = $mysqli->query("SELECT `id` FROM `users` WHERE `login` = '". trim($_POST["login"])."'");
+                        if(!$query_select_user)
+                        {
+                            $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Ошибка в запросе к БД, при проверке логина </p>";
+                            redirect_to($error_message,"registration.php");
+                        }
+                        if($query_select_user->num_rows == 1)
+                        {
+                            $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Пользователь с данным логином зарегистрирован </p>";
+                            redirect_to($error_message,"registration.php");
+                        }
+                        $result_query_insert = $mysqli->query("INSERT INTO `users`(`login`, `password`) VALUES ('".trim($_POST["login"])."','".trim($_POST["password"])."')");
+                        if(!$result_query_insert){
+                            $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> При регистрации произошла ощибка.</p>";
+                            redirect_to($error_message,"registration.php");
+                        }else{
+                            saveCookisForPage("login","authorization_php");
+                            saveCookisForPage("password","authorization_php");
+                            header("HTTP/1.1 301 Moved Permanently");
+                            header("Location: ". $address_site."/auth.php");
+                            exit();
+                        }
                     }
                 }else{
                     $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Отсутствует проверечный код, то есть код капчи </p>";

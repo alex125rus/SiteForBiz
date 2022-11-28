@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once("dbconnect.php");
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -38,46 +39,26 @@
     </header>
     <div class="center">
     <?php
-    if(isset($_SESSION["error_messages"]))
+    if(isset($_SESSION["server_messages"]))
     {
-        echo $_SESSION["error_messages"];
+        echo $_SESSION["server_messages"];
 
-        unset($_SESSION["error_messages"]);
+        unset($_SESSION["server_messages"]);
     }
     ?>
     </div>
     <div class="center">
         <h2>Форма авторизации</h2>
-        <form action="author.php" method="POST" name="Form_author">
+        <form action="author.php" method="POST" name="Form_register">
             <div class="center">
-                <?php
-                if(isset($_COOKIE["login"]) && !empty(trim($_COOKIE["login"])))
-                {
-                    echo "<input type='text' name='login' minlength='2' , maxlength='20' require placeholder='Логин' value='".trim($_COOKIE["login"]). "' />";
-                }else
-                {
-                    echo "<input type='text' name='login' minlength='2' , maxlength='20' require placeholder='Логин' />";
-                }
-                echo "<br>";
-                echo "<br>";
-                if(isset($_COOKIE["password"]) && !empty(trim($_COOKIE["password"])))
-                {
-                    echo "<input type='password' name='password' minlength='6' , maxlength='20' require placeholder='Пароль'  value='".trim($_COOKIE["password"]). "' />";
-                }else
-                {
-                    echo "<input type='password' name='password' minlength='6' , maxlength='20' require placeholder='Пароль' />";
-                }
-                echo "<br>";
-                echo "<br>";               
-                ?>
-                <img src="captcha.php" alt="капча"/><br>
-                <input type="text" name = "captcha" require/>
+                <input type='text' name='login' minlength='2' , maxlength='20' require placeholder='Логин' />
+                <br><br>
+                <input type='password' name='password' minlength='6' , maxlength='20' require placeholder='Пароль'/>
+                <br><br>
+                <input type="submit" name="btn_submit_author" value="Авторизироваться">
                 <br>
                 <br>
-                <input type="submit" name="btn_submit_register" value="Авторизироваться">
-                <br>
-                <br>
-                <a href="registration.php">Зарегестрироваться?</a>
+                <a href="registration.php">Регистрация</a>
             </div>
         </form>
         

@@ -75,7 +75,7 @@
                 <a href="services.php">Сервисы</a>
             </li>
             <li>
-                <a href="authorization.php">RSS</a>
+                <a href="auth.php">RSS</a>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropbtn">Приложение</a>

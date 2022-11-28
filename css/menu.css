@@ -170,3 +170,57 @@
   border-radius: 10px;
   background-color: grey;
 }
+.newsbox {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid rgb(17, 16, 16);
+  background-color: white;
+  border-radius: 4px;
+}
+.column_left{
+  float: left;
+  width: 13%;
+  height: 100%;
+  position: fixed;
+}
+.column_right{
+  float: right;
+  width: 87%;
+  height: 100%;
+  background-color: #ba25c4;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.black_color{
+  color: black;
+  font-size: 10pt;
+  float: left;
+  margin-right: 5px;
+}
+
+.column_left_sub{
+  float: left;
+  width: 13%;
+  height: 100%;
+}
+.column_center_sub{
+  float: left;
+  width: 77%;
+  height: 100%;
+}
+.column_left_sub{
+  float: left;
+  width: 13%;
+  height: 100%;
+
+}
+.column_center_right{
+  float: left;
+  width: 10%;
+  height: 100%;
+}
