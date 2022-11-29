@@ -224,3 +224,8 @@
   width: 10%;
   height: 100%;
 }
+.leftConteiner
+{
+  float: left;
+  margin-left: 20px;
+}
