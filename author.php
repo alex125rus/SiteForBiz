@@ -48,6 +48,42 @@ if(isset($_POST["btn_submit_author"]) && !empty($_POST["btn_submit_author"]))
     }
 }else
 {
-    exit("<div class='center'><p><strong>Ошибка</strong>Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=".$address_site.">главную страницу</a>.</p></div>");
+    if(isset($_POST["btn_submit_author_add"]) && !empty($_POST["btn_submit_author_add"]))
+    {
+        if(isset($_POST["login"]) && !empty(trim($_POST["login"])))
+        {
+            if(isset($_POST["password"]) && !empty(trim($_POST["password"])))
+            {
+                $result_query_select = $mysqli->query("SELECT * FROM `users` WHERE login = '".trim($_POST["login"])."' AND password = '" .trim($_POST["password"])."'" );
+                if(!$result_query_select)
+                {
+                    $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Ошибка в запросе к БД, при проверке пользователя</p>";
+                    redirect_to($error_message);
+                }
+                if($result_query_select->num_rows != 1)
+                {
+                    $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Пользователь с такой комбинаией логина и пароля не найдено</p>";
+                    redirect_to($error_message);
+                }
+                $cat = mysqli_fetch_all($result_query_select,MYSQLI_ASSOC);
+                saveCookisForPage("login");
+                saveCookisForPage("password");
+                $_SESSION["aut_id"] = $cat[0]["id"];
+                $meas = "Авторизация успешна";
+                redirect_to($meas,"addBookInBd.php");
+                
+            }else{
+                $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Пароль не введен </p>";
+                redirect_to($error_message);
+            }
+        }else
+        {
+                $error_message = "<p class='mesage_error'><strong>Ошибка!</strong> Логин не введен </p>";
+                redirect_to($error_message);
+        }
+    }else
+    {
+        exit("<div class='center'><p><strong>Ошибка</strong>Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=".$address_site.">главную страницу</a>.</p></div>");
+    }
 }
 ?>

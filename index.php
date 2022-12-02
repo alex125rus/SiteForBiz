@@ -3,6 +3,9 @@
     require_once("dbconnect.php");
     require_once("header.html");
 ?>
+<head>
+<title>Главная</title>
+</head>
 
 <body>
     <?php

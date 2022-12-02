@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once("dbconnect.php");
+
 function redirect_to($address_page = "rss.php",$site = "http://f96414jz.beget.tech")
 {
     header("HTTP/1.1 301 Moved Permanently");

@@ -4,6 +4,9 @@
     //require_once("rssforming.php");
     require_once("header.html");
 ?>
+<head>
+<title>Контакты</title>
+</head>
 
 <body>
     <?php

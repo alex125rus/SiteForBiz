@@ -4,6 +4,10 @@
     //require_once("rssforming.php");
     require_once("header.html");
 ?>
+<head>
+<title>XML</title>
+<script src="js/table.js"></script>
+</head>
 
 <body>
     <?php
@@ -11,8 +15,9 @@
     ?>
     <div class="top" class="center">
         <div class="center">
-            <table border="1" style="display: inline-block;">
-                <tr>
+            <table border="1" style="display: inline-block;" class="table_sort">
+            <thead>
+            <tr>
                     <th>Id</th>
                     <th>Название</th>
                     <th>Автор</th>
@@ -21,6 +26,8 @@
                     <th>Страна</th>
                     <th>Герои</th>
                 </tr>
+            </thead>
+            <tbody>
                 <?php
             /*$host = 'localhost';
             $data = 'f96414jz_deteciv';
@@ -70,6 +77,7 @@
             }
             $dom->appendChild($root);
             $dom->save($xml_file_name);
+            echo '</tbody>';
             echo '</table>';
             echo "<a href = \"$xml_file_name\">XML</a>";
             ?>

@@ -57,7 +57,7 @@
                 <br><br>
                 <input type='password' name='password' minlength='6' , maxlength='20' require placeholder='Пароль' />
                 <br><br>
-                <input type="submit" name="btn_submit_author" value="Авторизироваться">
+                <input type="submit" name="btn_submit_author_add" value="Авторизироваться">
                 <br>
                 <br>
                 <a href="registration.php">Регистрация</a>

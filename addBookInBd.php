@@ -5,16 +5,37 @@
     require_once("header.html");
 ?>
 <head>
-<title>Поиск</title>
+<title>Сервисы</title>
 </head>
-
 <body>
-    <?php
+<?php
     require_once("menu.html");
     ?>
-    <form action="sear.php" method="POST">
+    <form action="addBook.php" method="POST">
         <div class="row">
-            <div class="leftConteiner">
+            <div>
+            <p>Название: 
+                <input list = 'character_name'  name='name'>
+                <datalist id='character_name'>
+                <?php
+                    $result_select_Country = $mysqli->query("SELECT `Name` FROM `title` GROUP BY `Name`");
+                    if(!$result_select_Country)
+                    {
+                        exit("ERROR");
+                    }else
+                    {
+                        $rows = $result_select_Country->num_rows;
+                        $cat = mysqli_fetch_all($result_select_Country,MYSQLI_ASSOC);
+                        for($i =0;$i<$rows;++$i)
+                        {
+                            echo "<option>".$cat[$i]['Name']."</option>";
+                        }
+                    }
+                ?>
+                </p>
+            </div>
+            <br>
+            <div>
             <p>Автор: 
                 <input list = 'character_author'  name='author'>
                 <datalist id='character_author'>
@@ -36,9 +57,10 @@
                 </datalist>
             </p>
             </div>
-            <div class="leftConteiner">
+            <br>
+            <div>
             <p>Год: 
-                <input list = 'character_year'  name='year'>
+                <input type="number" list = 'character_year'  name='year'>
                 <datalist id='character_year'>
                 <?php
                     $result_select_date = $mysqli->query("SELECT `Date` FROM `title` GROUP BY `Date`");
@@ -57,9 +79,10 @@
                 ?>
                 </p>
             </div>
-            <div class="leftConteiner">
+            <br>
+            <div>
             <p>Количество страниц: 
-                <input list = 'character_count'  name='count'>
+                <input type="number" list = 'character_count'  name='count'>
                 <datalist id='character_count'>
                 <?php
                     $result_select_count = $mysqli->query("SELECT `Count` FROM `title` GROUP BY `Count`");
@@ -78,7 +101,8 @@
                 ?>
                 </p>
             </div>
-            <div class="leftConteiner">
+            <br>
+            <div>
             <p>Страна: 
                 <input list = 'character_country'  name='country'>
                 <datalist id='character_country'>
@@ -99,9 +123,30 @@
                 ?>
                 </p>
             </div>
+            <div>
+            <p>Герой/герои: 
+                <input list = 'character_hero'  name='hero'>
+                <datalist id='character_hero'>
+                <?php
+                    $result_select_Country = $mysqli->query("SELECT `Hero` FROM `title` GROUP BY `Hero`");
+                    if(!$result_select_Country)
+                    {
+                        exit("ERROR");
+                    }else
+                    {
+                        $rows = $result_select_Country->num_rows;
+                        $cat = mysqli_fetch_all($result_select_Country,MYSQLI_ASSOC);
+                        for($i =0;$i<$rows;++$i)
+                        {
+                            echo "<option>".$cat[$i]['Hero']."</option>";
+                        }
+                    }
+                ?>
+                </p>
+            </div>
         </div>
-        <div class="leftConteiner">
-            <input type="submit" name="button" value="Найти">
+        <div>
+            <input type="submit" name="button" value="Добавить">
         </div>
     </form>
     <br><br><br>
@@ -115,4 +160,7 @@
                 }
             ?>
     </div>
+<?php
+    require_once("down.html");
+    ?>
 </body>
