@@ -24,7 +24,7 @@ if(isset($_POST["button"]) && !empty($_POST["button"]))
             exit("ERROR! Ошибка добавления новостив БД");
         }else
         {
-            $result_query_select = $mysqli->query("SELECT * FROM `news`");
+            $result_query_select = $mysqli->query("SELECT * FROM `news` ORDER BY `pubDate` DESC");
             $out = '<?xml version="1.0"?>';
             $out .= '<rss version="2.0">';
             $out .= '<channel>';
@@ -44,7 +44,7 @@ if(isset($_POST["button"]) && !empty($_POST["button"]))
                     <title>' . $row['title'] . '</title>
                     <link>http://f96414jz.beget.tech/rss.php</link>
                     <description><![CDATA[' . $row['description'] . ']]></description>
-                    <pubDate>' . date(DATE_RFC822, $row['pubDate']) . '</pubDate>
+                    <pubDate>' . date("D, d M y H:m",strtotime($row['pubDate'])) . '</pubDate>
                 </item>';
                 }
             }
@@ -63,7 +63,7 @@ if(isset($_POST["button"]) && !empty($_POST["button"]))
     }
 }else
 {
-    $result_query_select = $mysqli->query("SELECT * FROM `news`");
+    $result_query_select = $mysqli->query("SELECT * FROM `news` ORDER BY `pubDate` DESC");
             $out = '<?xml version="1.0"?>';
             $out .= '<rss version="2.0">';
             $out .= '<channel>';
@@ -83,7 +83,7 @@ if(isset($_POST["button"]) && !empty($_POST["button"]))
                     <title>' . $row['title'] . '</title>
                     <link>http://f96414jz.beget.tech/rss.php</link>
                     <description><![CDATA[' . $row['description'] . ']]></description>
-                    <pubDate>' . date(DATE_RFC822, $row['pubDate']) . '</pubDate>
+                    <pubDate>' . date("D, d M y H:m", strtotime($row['pubDate'])) . '</pubDate>
                 </item>';
                 }
             }

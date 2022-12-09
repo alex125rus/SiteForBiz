@@ -3,6 +3,7 @@
     require_once("dbconnect.php");
     //require_once("rssforming.php");
     require_once("header.html");
+    include 'count.php';
 ?>
 <head>
 <title>Сервисы</title>
@@ -12,19 +13,31 @@
     <?php
     require_once("menu.html");
     ?>
+    <div class="center">
+    <h1>Сервисы</h1>
+</div>
     <div class="top" class="center">
-        <div class="center clockdiv">
-            <a href="https://time.is/Obninsk" id="time_is_link" rel="nofollow"
-                style="font-size:64px;color:white;background:black"></a>
-            <span id="Obninsk_z71d" style="font-size:64px;color:white;background:black"></span>
-            <script src="//widget.time.is/t.js"></script>
-            <script>
-            time_is_widget.init({
-                Obninsk_z71d: {}
-            });
-            </script>
+        <div class="center" style="border: 1px;">
+            <div class="center">
+                <h3>Точное время(По Москве)</h3>
+            </div>
+            <br>
+            <div class="center clockdiv">
+                <a href="https://time.is/Obninsk" id="time_is_link" rel="nofollow"
+                    style="font-size:64px;color:white;background:black"></a>
+                <span id="Obninsk_z71d" style="font-size:64px;color:white;background:black"></span>
+                <script src="//widget.time.is/t.js"></script>
+                <script>
+                time_is_widget.init({
+                    Obninsk_z71d: {}
+                });
+                </script>
+            </div>
         </div>
+        
         <br>
+        <br>
+        <div class="center"><h3>Календарь</h3></div><br>
         <div class="center">
             <div class="look-calendar" style="color: black;">
                 <table id="calendar">
@@ -47,6 +60,7 @@
             </div>
         </div>
         <br>
+        <div class="center"><h3>Погода</h3></div><br>
         <div class="center">
             <div id="225ec3fb3a180a30586fbec3a2aad904" class="ww-informers-box-854753" style="margin-left:42%">
                 <p class="ww-informers-box-854754"><a href="https://world-weather.ru/pogoda/russia/moscow/">Погода
@@ -98,6 +112,6 @@
         <script src="js/calendar.js"></script>
     </div>
     <?php
-    require_once("down.html");
+    require_once("down.php");
     ?>
 </body>

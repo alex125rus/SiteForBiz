@@ -3,6 +3,7 @@
     require_once("dbconnect.php");
     //require_once("rssforming.php");
     require_once("header.html");
+    include "count.php";
 ?>
 <head>
 <title>Приложение</title>
@@ -69,6 +70,6 @@
         </div>
     </div>
     <?php
-    require_once("down.html");
+    require_once("down.php");
     ?>
 </body>

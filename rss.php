@@ -3,6 +3,7 @@
     require_once("dbconnect.php");
     //require_once("rssforming.php");
     require_once("header.html");
+    include "count.php";
 ?>
 <head>
 <title>RSS</title>
@@ -12,6 +13,9 @@
     <?php
     require_once("menu.html");
     ?>
+    <div class="center">
+    <h1>RSS</h1>
+</div>
     <div class="top" class="center">
         <br>
         <div class="center">
@@ -169,6 +173,6 @@
         <br>
     </div>
     <?php
-    require_once("down.html");
+    require_once("down.php");
     ?>
 </body>

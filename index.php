@@ -2,6 +2,7 @@
     session_start();
     require_once("dbconnect.php");
     require_once("header.html");
+    include "count.php";
 ?>
 <head>
 <title>Главная</title>
@@ -27,6 +28,6 @@
         <br>
     </div>
     <?php
-    require_once("down.html");
+    require_once("down.php");
     ?>
 </body>

@@ -269,3 +269,14 @@ content: "▼"
 th.sorted[data-order="1"]::after {
 content: "▲"
 }
+div.box {
+  height: 10em;
+  position: relative }
+div.box p {
+  margin: 0;
+  background: rgb(230, 12, 197);
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }

@@ -3,6 +3,7 @@
     require_once("dbconnect.php");
     //require_once("rssforming.php");
     require_once("header.html");
+    include "count.php";
 ?>
 <head>
 <title>Поиск</title>
@@ -12,6 +13,9 @@
     <?php
     require_once("menu.html");
     ?>
+    <div class="center">
+    <h1>Поиск</h1>
+</div>
     <form action="sear.php" method="POST">
         <div class="row">
             <div class="leftConteiner">
@@ -115,4 +119,7 @@
                 }
             ?>
     </div>
+    <?php
+    require_once("down.php");
+    ?>
 </body>
